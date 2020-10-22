@@ -1,8 +1,9 @@
 {
     "name": "Ecowitt",
-    "version": "0.0.7",
+    "version": "0.0.9",
     "slug": "ecowitt",
     "description": "An addon for processing data from Ecowitt Personal Weather Stations",
+    "stage": "experimental",
     "arch": [
         "armhf",
         "armv7",
@@ -10,7 +11,7 @@
         "amd64",
         "i386"
     ],
-    "startup": "before",
+    "startup": "application",
     "boot": "auto",
     "services": [
         "mqtt:need"
@@ -21,5 +22,8 @@
     },
     "ports": {
         "8000/tcp": 8000
+    },
+    "ports_description": {
+        "8000/tcp": "The port the Ecowitt will use to submit data to Home Assistant"
     }
 }
