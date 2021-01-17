@@ -13,7 +13,7 @@ RUN apk add --no-cache \
         musl-dev \
     && python3 -m ensurepip \
     && pip3 install --no-cache --upgrade pip setuptools \
-    && pip install ecowitt2mqtt \
+    && pip install ecowitt2mqtt==1.0.7 \
     && apk del .build-dependencies
 
 # Copy data for add-on
