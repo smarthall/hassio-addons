@@ -1,9 +1,9 @@
 {
     "name": "Ecowitt",
-    "version": "0.0.17",
+    "version": "1.0.8-18",
     "slug": "ecowitt",
     "description": "An addon for processing data from Ecowitt Personal Weather Stations",
-    "stage": "experimental",
+    "stage": "stable",
     "arch": [
         "armhf",
         "armv7",
