@@ -2,7 +2,9 @@
 
 Once you have installed this Add On you should configure it to use a port that is not yet allocated on your Home Assistant server. You should also make sure that the port is not available to the outside world, either by firewalling it off, or making sure it is not included in port forwarding rules. Note down the port number you are using.
 
-Currently there are no configuration options. This is because it is configured to automatically connect to the MQTT Add On, and it is set to support Home Assistant discovery.
+Currently there is a single configuration option:
+
+`unit_system` - Set to `metric` or `imperial` depending on the unit system preferred.
 
 Use the following settings in the custom weather provider page of the 'WS View' app.
 Protocol Type: Ecowitt
