@@ -1,6 +1,6 @@
 {
     "name": "Ecowitt",
-    "version": "1.0.9-1",
+    "version": "1.0.10-1",
     "slug": "ecowitt",
     "description": "An addon for processing data from Ecowitt Personal Weather Stations",
     "stage": "stable",
@@ -17,10 +17,10 @@
         "mqtt:need"
     ],
     "options": {
-      "unit_system": "imperial"
+        "unit_system": "imperial"
     },
     "schema": {
-      "unit_system": "match(imperial|metric)?"
+        "unit_system": "match(imperial|metric)?"
     },
     "ports": {
         "8000/tcp": 8000
