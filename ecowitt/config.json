@@ -1,10 +1,9 @@
 {
     "name": "Ecowitt",
-    "version": "1.3.0-1",
+    "version": "1.0.10-11",
     "slug": "ecowitt",
     "description": "An addon for processing data from Ecowitt Personal Weather Stations",
     "stage": "stable",
-    "image": "ghcr.io/smarthall/ecowitt2mqtt:{arch}-1628680590",
     "arch": [
         "armhf",
         "armv7",
