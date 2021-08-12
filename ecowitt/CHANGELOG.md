@@ -1,5 +1,6 @@
 ## 1.3.0-2
 * Update to ecowitt2mqtt 1.3.0
+* Use prebuilt docker images
 
 ## 1.0.10-11
 * Support external MQTT servers
