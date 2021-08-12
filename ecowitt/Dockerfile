@@ -4,7 +4,9 @@ FROM ${BUILD_FROM}
 ENV LANG C.UTF-8
 
 # Install and build Ecowitt2MQTT
-RUN apk add --no-cache --virtual .build-dependencies \
+RUN apk add --no-cache \
+        python3 \
+    && apk add --no-cache --virtual .build-dependencies \
         gcc \
         python3-dev \
         libc-dev \
