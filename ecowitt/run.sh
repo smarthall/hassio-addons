@@ -49,4 +49,3 @@ ecowitt2mqtt \
     --unit-system ${UNIT_SYSTEM} \
     --hass-discovery \
     --port=8000
-
