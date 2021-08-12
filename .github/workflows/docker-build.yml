@@ -29,7 +29,7 @@ jobs:
       with:
         args: |
           --all \
-          --target ecowitt2mqtt
+          --target ecowitt
 
     # - name: Publish Staging Addon Version
     #   run: |
