@@ -1,3 +1,6 @@
+## 1.3.0-1
+* Update to ecowitt2mqtt 1.3.0
+
 ## 1.0.10-11
 * Support external MQTT servers
 
