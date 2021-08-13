@@ -30,11 +30,3 @@ jobs:
         args: |
           --all \
           --target ecowitt
-
-    # - name: Publish Staging Addon Version
-    #   run: |
-    #       git config user.name github-actions
-    #       git config user.email github-actions@github.com
-    #       git add .
-    #       git commit -m "Updating staging addon config"
-    #       git push
