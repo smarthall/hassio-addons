@@ -2,6 +2,16 @@
 * Update to ecowitt2mqtt 1.3.0
 * Use prebuilt docker images
 
+### NOTE
+There is currently an issue updating from versions before 1.3.0 to 1.3.0 and beyond. This is due to changing from images that are built on your hassio machine, to ones that are pre-built in GitHub actions, and an issue in Home Assistant.
+
+You can work around this issue by:
+
+    Make a note of your addon settings
+    Remove the addon by clicking the uninstall button
+    Click install to install the addon again
+    Restore your settings and click start
+
 ## 1.0.10-11
 * Support external MQTT servers
 
