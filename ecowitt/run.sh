@@ -30,14 +30,24 @@ if bashio::config.has_value 'mqtt_pass'; then
   MQTT_PASS=$(bashio::config 'mqtt_pass')
 fi
 
-# Get the Unit system
-if bashio::config.has_value 'unit_system'; then
-  UNIT_SYSTEM=$(bashio::config 'unit_system')
+# Get the Unit systems
+if bashio::config.has_value 'output_unit_system'; then
+  OUTPUT_UNIT_SYSTEM=$(bashio::config 'output_unit_system')
 else
-  UNIT_SYSTEM="imperial"
+  OUTPUT_UNIT_SYSTEM="imperial"
 fi
 
-# TODO: Check if the MQTT vars are set, and throw a nice error if not
+if bashio::config.has_value 'input_unit_system'; then
+  INPUT_UNIT_SYSTEM=$(bashio::config 'input_unit_system')
+else
+  INPUT_UNIT_SYSTEM="imperial"
+fi
+
+# Check for MQTT config
+if [[ -z "${MQTT_HOST}" || -z "${MQTT_PORT}" || -z "${MQTT_USER}" || -z "${MQTT_PASS}" ]]; then
+  bashio::log.fatal "MQTT Configuration not found, cannot continue."
+  exit 1
+fi
 
 # Boot up
 bashio::log.info "Starting Ecowitt2MQTT"
@@ -46,6 +56,7 @@ ecowitt2mqtt \
     --mqtt-port=${MQTT_PORT} \
     --mqtt-username=${MQTT_USER} \
     --mqtt-password=${MQTT_PASS} \
-    --unit-system ${UNIT_SYSTEM} \
+    --input-unit-system ${INPUT_UNIT_SYSTEM} \
+    --output-unit-system ${OUTPUT_UNIT_SYSTEM} \
     --hass-discovery \
     --port=8000

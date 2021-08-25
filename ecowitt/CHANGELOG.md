@@ -1,3 +1,10 @@
+## 2.0.0-1
+* Update to ecowitt2mqtt 2.0.0
+* Better checking of MQTT configuration errors
+
+### NOTE
+The `unit_system` configuration, has been changed to `input_unit_system` and `output_unit_system` to match the change made upstream. When updating you may need to update your configuration.
+
 ## 1.3.0-2
 * Update to ecowitt2mqtt 1.3.0
 * Use prebuilt docker images
