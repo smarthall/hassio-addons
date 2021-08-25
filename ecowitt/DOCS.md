@@ -4,15 +4,17 @@ Once you have installed this Add On you should configure it to use a port that i
 
 These are the configuration options you can use:
 
-`unit_system` - Set to `metric` or `imperial` depending on the unit system preferred.
+`output_unit_system` - Set to `metric` or `imperial` depending on the unit system preferred.
 
-`mqtt_host` - Set the hostname/ip of the MQTT server
+`input_unit_system` - Set to `metric` or `imperial` depending on the the values coming from your weather sensors.
 
-`mqtt_port` - Set the port of the MQTT server
+`mqtt_host` - Set the hostname/ip of the MQTT server.
 
-`mqtt_user` - Set the username to use when connecting to MQTT
+`mqtt_port` - Set the port of the MQTT server.
 
-`mqtt_pass` - Set the password for the MQTT user
+`mqtt_user` - Set the username to use when connecting to MQTT.
+
+`mqtt_pass` - Set the password for the MQTT user.
 
 
 Use the following settings in the custom weather provider page of the 'WS View' app.
