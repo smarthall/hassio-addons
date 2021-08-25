@@ -1,3 +1,6 @@
+## 2.0.0-2
+* Reduce the image size by leaving the pip cache out of the image
+
 ## 2.0.0-1
 * Update to ecowitt2mqtt 2.0.0
 * Better checking of MQTT configuration errors
