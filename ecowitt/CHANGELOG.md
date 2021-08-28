@@ -1,3 +1,7 @@
+## 2.0.2-1
+* See upstream notes: https://github.com/bachya/ecowitt2mqtt/releases/tag/2.0.1
+* and the other version: https://github.com/bachya/ecowitt2mqtt/releases/tag/2.0.2
+
 ## 2.0.0-2
 * Reduce the image size by leaving the pip cache out of the image
 
