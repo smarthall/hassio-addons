@@ -1,3 +1,7 @@
+## 2.0.3-1
+* Update to ecowitt2mqtt 2.0.3
+  * Don't treat wind direction as a speed
+
 ## 2.0.2-1
 * See upstream notes: https://github.com/bachya/ecowitt2mqtt/releases/tag/2.0.1
 * and the other version: https://github.com/bachya/ecowitt2mqtt/releases/tag/2.0.2
