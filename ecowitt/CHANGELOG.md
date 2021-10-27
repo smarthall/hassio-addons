@@ -1,3 +1,10 @@
+## 2021.10.0-1
+* Update to 2021.10.0
+  * Add Python 3.9 and 3.10 as supported versions
+  * Add Fine Offset HP2550 to the device database
+  * Migrate versioning to CalVer
+* 2019 versions in a single release!
+
 ## 2.0.3-1
 * Update to ecowitt2mqtt 2.0.3
   * Don't treat wind direction as a speed
