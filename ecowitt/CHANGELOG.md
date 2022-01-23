@@ -1,3 +1,11 @@
+## 2022.01.0-1
+* Update to 2022.01.0
+  * Bump asyncio-mqtt to 0.12.1
+  * Configure WhiteSource Bolt for GitHub
+  * Update pre-commit/action action to v2.0.3
+  * Update all dependencies
+  * Configure Renovate
+
 ## 2021.10.0-1
 * Update to 2021.10.0
   * Add Python 3.9 and 3.10 as supported versions
