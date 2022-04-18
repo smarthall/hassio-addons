@@ -1,3 +1,13 @@
+## 2022.04.0-1
+* Update to 2022.04.0
+  * Breaking change: Update binary battery sensor values to be consistent with Home Assistant
+  * Add support for GW2001 weather station
+  * Add support for WH57 lightning data
+  * Update hadolint/hadolint-action action to v2
+  * Upgrade Black used in pre-commit
+  * Update all dependencies to v3
+  * Use constants for Home Assistant units
+
 ## 2022.01.0-1
 * Update to 2022.01.0
   * Bump asyncio-mqtt to 0.12.1
