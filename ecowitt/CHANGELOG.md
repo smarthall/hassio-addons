@@ -1,3 +1,7 @@
+## 2022.04.1-1
+* Update to 2022.04.1
+  * Fix bug where lightning strike distance is a string
+
 ## 2022.04.0-1
 * Update to 2022.04.0
   * Breaking change: Update binary battery sensor values to be consistent with Home Assistant
