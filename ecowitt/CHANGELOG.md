@@ -1,3 +1,6 @@
+## 2022.04.3-2
+* Improve efficiency of the build using Python `wheel`
+
 ## 2022.04.3-1
 * Update to 2022.04.3
   * Fix payload generation bug

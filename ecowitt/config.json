@@ -1,6 +1,6 @@
 {
     "name": "Ecowitt",
-    "version": "2022.04.3-1",
+    "version": "2022.04.3-2",
     "slug": "ecowitt",
     "description": "An addon for processing data from Ecowitt Personal Weather Stations",
     "stage": "stable",

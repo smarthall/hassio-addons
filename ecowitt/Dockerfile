@@ -12,7 +12,7 @@ RUN apk add --no-cache \
         libc-dev \
         musl-dev \
     && python3 -m ensurepip \
-    && pip3 install --no-cache --upgrade pip setuptools \
+    && pip3 install --no-cache --upgrade pip setuptools wheel \
     && pip install --no-cache ecowitt2mqtt==2022.04.3 \
     && apk del .build-dependencies
 
