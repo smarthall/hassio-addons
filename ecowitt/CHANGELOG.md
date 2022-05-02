@@ -1,3 +1,13 @@
+## 2022.04.3-1
+* Update to 2022.04.3
+  * Fix payload generation bug
+
+## 2022.02.2-1
+* Update to 2022.04.2
+  * Fix improper JSON serialization of datetimes
+  * Ensure datetimes are converted before publishing to MQTT
+  * Handle case where distance conversion function is handed bad input
+
 ## 2022.04.1-1
 * Update to 2022.04.1
   * Fix bug where lightning strike distance is a string
