@@ -1,3 +1,10 @@
+## 2022.05.0-1
+* Update to 2022.05.0
+  * Add ability to configure prefix for Home Assistant entity IDs
+  * Check for lightning strike timestamps that are just empty strings
+  * Fixed descriptions of the prefix parameters
+  * Add additional pre-commit hooks
+
 ## 2022.04.3-2
 * Improve efficiency of the build using Python `wheel`
 
