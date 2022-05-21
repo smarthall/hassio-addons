@@ -1,3 +1,6 @@
+## 2022.05.0-2
+* Add `init: false` to the configuration to fix bootup bug
+
 ## 2022.05.0-1
 * Update to 2022.05.0
   * Add ability to configure prefix for Home Assistant entity IDs
