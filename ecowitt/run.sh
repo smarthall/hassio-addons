@@ -52,11 +52,11 @@ fi
 # Boot up
 bashio::log.info "Starting Ecowitt2MQTT"
 ecowitt2mqtt \
-    --mqtt-broker=${MQTT_HOST} \
-    --mqtt-port=${MQTT_PORT} \
-    --mqtt-username=${MQTT_USER} \
-    --mqtt-password=${MQTT_PASS} \
-    --input-unit-system ${INPUT_UNIT_SYSTEM} \
-    --output-unit-system ${OUTPUT_UNIT_SYSTEM} \
+    --mqtt-broker="${MQTT_HOST}" \
+    --mqtt-port="${MQTT_PORT}" \
+    --mqtt-username="${MQTT_USER}" \
+    --mqtt-password="${MQTT_PASS}" \
+    --input-unit-system "${INPUT_UNIT_SYSTEM}" \
+    --output-unit-system "${OUTPUT_UNIT_SYSTEM}" \
     --hass-discovery \
     --port=8000
