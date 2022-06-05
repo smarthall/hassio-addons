@@ -8,6 +8,7 @@ MQTT_HOST=""
 MQTT_PORT=1883
 MQTT_USER=""
 MQTT_PASS=""
+ADDL_PARAMS=()
 
 if bashio::services.available "mqtt"; then
   MQTT_HOST=$(bashio::services "mqtt" "host")
@@ -43,6 +44,16 @@ else
   INPUT_UNIT_SYSTEM="imperial"
 fi
 
+if bashio::config.has_value 'hass_discovery_prefix'; then
+  HASS_DISCOVERY_PREFIX=$(bashio::config 'hass_discovery_prefix')
+else
+  HASS_DISCOVERY_PREFIX="homeassistant"
+fi
+
+if bashio::config.has_value 'hass_entity_id_prefix'; then
+  ADDL_PARAMS+=(--hass-entity-id-prefix="$(bashio::config 'hass_entity_id_prefix')")
+fi
+
 # Check for MQTT config
 if [[ -z "${MQTT_HOST}" || -z "${MQTT_PORT}" || -z "${MQTT_USER}" || -z "${MQTT_PASS}" ]]; then
   bashio::log.fatal "MQTT Configuration not found, cannot continue."
@@ -59,4 +70,5 @@ ecowitt2mqtt \
     --input-unit-system "${INPUT_UNIT_SYSTEM}" \
     --output-unit-system "${OUTPUT_UNIT_SYSTEM}" \
     --hass-discovery \
-    --port=8000
+    --hass-discovery-prefix="${HASS_DISCOVERY_PREFIX}" \
+    --port=8000 "${ADDL_PARAMS[@]}"

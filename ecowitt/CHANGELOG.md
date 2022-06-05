@@ -1,3 +1,8 @@
+## 2022.05.0-3
+* Add support for upstream options:
+  * `hass_discovery_prefix` - specifies the mqtt discovery prefix (upstream: `--hass-discovery-prefix`).
+  * `hass_entity_id_prefix` - specifies the entity ID prefix (upstream: `--hass-entity-id-prefix`).
+
 ## 2022.05.0-2
 * Add `init: false` to the configuration to fix bootup bug
 

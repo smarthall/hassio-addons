@@ -16,6 +16,10 @@ These are the configuration options you can use:
 
 `mqtt_pass` - Set the password for the MQTT user.
 
+`hass_discovery_prefix` - The Home Assistant discovery prefix to use.
+
+`hass_entity_id_prefix` - The prefix to use for Home Assistant entity IDs.
+
 
 Use the following settings in the custom weather provider page of the 'WS View' app.
 Protocol Type: Ecowitt
