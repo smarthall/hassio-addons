@@ -27,4 +27,5 @@ jobs:
       with:
         args: |
           --all \
-          --target ecowitt
+          --target ecowitt \
+          --base 3.15

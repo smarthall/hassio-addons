@@ -5,10 +5,10 @@ ENV LANG C.UTF-8
 
 # Install and build Ecowitt2MQTT
 RUN apk add --no-cache \
-        python3==3.9.7-r4 \
+        python3 \
     && apk add --no-cache --virtual .build-dependencies \
         gcc \
-        python3-dev==3.9.7-r4 \
+        python3-dev \
         libc-dev \
         musl-dev \
     && python3 -m ensurepip \
