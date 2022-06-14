@@ -4,30 +4,30 @@
 * Update to 2022.06.3
   * Fix bug in release script
 * Update to 2022.06.2
- * Add command to retrieve diagnostics
- * Add support for MQTT over TLS
- * Add an internal mapping of known battery types to strategy
- * Add "percentage" battery configuration strategy
- * Fix issue where Uvicorn logs didn't correspond to verbose mode
- * Remove Home Assistant state class from boolean batteries
- * Ensure percentage batteries have a "battery" device class with Home Assistant MQTT Discovery
- * Fix bug with improperly calculated percentage battery values
- * Fix bug with percentage batteries in HASS MQTT Discovery
- * Streamline test fixture framework for device payloads
- * Simplify platform detection in Home Assistant MQTT Discovery
+  * Add command to retrieve diagnostics
+  * Add support for MQTT over TLS
+  * Add an internal mapping of known battery types to strategy
+  * Add "percentage" battery configuration strategy
+  * Fix issue where Uvicorn logs didn't correspond to verbose mode
+  * Remove Home Assistant state class from boolean batteries
+  * Ensure percentage batteries have a "battery" device class with Home Assistant MQTT Discovery
+  * Fix bug with improperly calculated percentage battery values
+  * Fix bug with percentage batteries in HASS MQTT Discovery
+  * Streamline test fixture framework for device payloads
+  * Simplify platform detection in Home Assistant MQTT Discovery
 * Update to 2022.06.1
- * Fix bug with parsing form data from an Ecowitt gateway
+  * Fix bug with parsing form data from an Ecowitt gateway
 * Update to 2022.06.0
- * Complete a full re-architecture of the library
- * Add support for Home Assistant long-term statistics
- * Add Home Assistant entity category support
- * Ensure HASS Discovery futures are created after MQTT connection is established
- * Update Docker image to use slim Debian
- * Replace various HASS constants with enums
- * Remove unused parameter from utility
- * Create a utility function to glob-search an iterable
- * Fix poetry.lock issue in Dockerfile
- * Update all dependencies
+  * Complete a full re-architecture of the library
+  * Add support for Home Assistant long-term statistics
+  * Add Home Assistant entity category support
+  * Ensure HASS Discovery futures are created after MQTT connection is established
+  * Update Docker image to use slim Debian
+  * Replace various HASS constants with enums
+  * Remove unused parameter from utility
+  * Create a utility function to glob-search an iterable
+  * Fix poetry.lock issue in Dockerfile
+  * Update all dependencies
 
 ## 2022.05.0-3
 * Add support for upstream options:
