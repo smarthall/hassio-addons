@@ -1,4 +1,7 @@
-## 2022.06.4-0
+## 2022.06.4-2
+* Unpin the home assistant base images
+
+## 2022.06.4-1
 * Update to 2022.06.4
   * Fix issue with missing HASS state classes
 * Update to 2022.06.3
