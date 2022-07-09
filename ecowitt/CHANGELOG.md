@@ -1,3 +1,11 @@
+## 2022.07.0-1
+* Update to 2022.07.0
+  * Fix Home Assistant state classes for several _piezo sensors
+  * Fix incorrect unit for rain rate sensors
+  * Fix Home Assistant state classes for rain "events"
+  * Correctly identify rrain constant as a glob
+  * Update all dependencies
+
 ## 2022.06.4-2
 * Unpin the home assistant base images
 
